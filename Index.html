@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonaris Audio | Modern Music Discovery & Sound Archive</title>
+  <meta name="description" content="Experience master-grade lossless music releases, modular synthesizer sessions, and curated vinyl presses." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 
+  <!-- Top Navigation Bar (Strict 3-zone contract) -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Zone 1: Wordmark -->
+      <a href="#" class="brand-logo">
+        <span class="brand-dot"></span>
+        SONARIS
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-links">
+        <a href="#featured">Featured</a>
+        <a href="#releases">Releases</a>
+        <a href="#charts">Top Tracks</a>
+        <a href="#visualizer">Visualizer</a>
+        <a href="#artists">Artists</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action -->
+      <div class="nav-actions">
+        <button class="btn-primary" id="btn-explore">Explore Sound</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="featured">
+    <div class="container hero-grid">
+      <!-- Hero Copy -->
+      <div class="hero-content">
+        <div class="editorial-kicker">
+          <span>Curated Audio Archive</span>
+          <span class="sep">·</span>
+          <span>Studio Sessions</span>
+          <span class="sep">·</span>
+          <span>Issue 08</span>
+        </div>
+        <h1 class="hero-title">Where Pure Sound Meets Acoustic Discovery</h1>
+        <p class="hero-subtitle">
+          Immerse yourself in master-grade lossless recordings, intimate modular synth performances, 
+          and heavyweight vinyl drops curated directly from independent producers worldwide.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary" id="btn-play-hero">▶ Listen to Featured Session</button>
+          <a href="#releases" class="btn-secondary">Explore Vault</a>
+        </div>
+        <div class="hero-now-playing">
+          <span class="np-label">Currently Playing:</span>
+          <span class="np-title">Prismic Resonance</span>
+          <span class="sep">·</span>
+          <span>Synthesis Collective</span>
+          <span class="sep">·</span>
+          <span class="np-genre">Melodic Synth</span>
+        </div>
+      </div>
+
+      <!-- Hero Visualizer / Turntable Card -->
+      <div class="hero-visual">
+        <div class="turntable-card">
+          <div class="turntable-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80" alt="Audiophile Turntable" class="turntable-img" />
+            <div class="record-badge">33⅓ RPM</div>
+            <div class="playback-overlay">
+              <div>
+                <p class="record-type">Master Recording</p>
+                <h3 class="record-title">Prismic Echoes LP</h3>
+              </div>
+              <button class="btn-circle-play" aria-label="Play">▶</button>
+            </div>
+          </div>
+          <!-- Equalizer Simulation -->
+          <div class="eq-strip">
+            <div class="eq-bars">
+              <span style="height: 60%"></span>
+              <span style="height: 90%"></span>
+              <span style="height: 45%"></span>
+              <span style="height: 80%"></span>
+              <span style="height: 100%"></span>
+              <span style="height: 70%"></span>
+              <span style="height: 50%"></span>
+              <span style="height: 85%"></span>
+            </div>
+            <span class="lossless-badge">24-bit / 96kHz FLAC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proof & Trust Metrics Strip -->
+    <div class="container stats-strip">
+      <div class="stat-item">
+        <div class="stat-number">24-Bit / 96kHz</div>
+        <div class="stat-desc">Direct Master Tape Lossless</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">140+</div>
+        <div class="stat-desc">Independent Artists Curation</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">580,000+</div>
+        <div class="stat-desc">Monthly Audiophile Listeners</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-desc">Direct Artist Revenue Share</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Releases (Bento Grid) -->
+  <section class="section" id="releases">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-kicker">Curated Catalog</span>
+          <h2 class="section-title">Featured Sound Editions & Vinyl</h2>
+        </div>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Marquee Release -->
+        <article class="bento-card marquee-card">
+          <div class="album-thumb">
+            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=800&q=80" alt="Prismic Echoes Album Cover" />
+            <button class="album-play-btn" aria-label="Play Album">▶</button>
+          </div>
+          <div class="album-details">
+            <div class="meta-row">
+              <span class="highlight">Melodic Synth & Ambient</span>
+              <span class="sep">·</span>
+              <span>2026</span>
+              <span class="sep">·</span>
+              <span>44 min</span>
+            </div>
+            <h3 class="album-heading">Prismic Echoes</h3>
+            <p class="album-artist">by Synthesis Collective</p>
+            <p class="album-text">An acoustic and modular journey exploring refracted harmonics, lush polyphonic layers, and deep bass frequencies recorded straight to half-inch tape.</p>
+            <ul class="mini-tracklist">
+              <li><span>01. Prismic Resonance</span><span class="duration">04:14</span></li>
+              <li><span>02. Harmonic Drift</span><span class="duration">04:38</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Secondary Release -->
+        <article class="bento-card standard-card">
+          <div class="album-thumb">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Mist and Water" />
+            <button class="album-play-btn" aria-label="Play Album">▶</button>
+          </div>
+          <div class="meta-row">
+            <span class="highlight">Nordic Ambient</span>
+            <span class="sep">·</span>
+            <span>8 Tracks</span>
+          </div>
+          <h3 class="card-title">Mist & Water</h3>
+          <p class="card-subtitle">by Loke Bjørnstad</p>
+          <p class="album-text">Recorded live in an isolated wooden boat-house in western Norway using hydrophones and tape loopers.</p>
+          <div class="card-footer-action">
+            <span>Vinyl 180g Edition</span>
+            <a href="#" class="order-link">Order LP ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Rotation Chart -->
+  <section class="section alt-bg" id="charts">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-kicker">Weekly Rotation</span>
+          <h2 class="section-title">Most Streamed Master Tapes</h2>
+        </div>
+      </div>
+
+      <div class="track-table">
+        <div class="track-row table-header">
+          <span class="col-num">#</span>
+          <span class="col-main">Title & Artist</span>
+          <span class="col-album">Album</span>
+          <span class="col-genre">Genre</span>
+          <span class="col-time">Time</span>
+        </div>
+
+        <div class="track-row">
+          <span class="col-num">01</span>
+          <div class="col-main">
+            <span class="track-name">Prismic Resonance</span>
+            <span class="artist-name">Synthesis Collective</span>
+          </div>
+          <span class="col-album">Prismic Echoes</span>
+          <span class="col-genre">Melodic Synth</span>
+          <span class="col-time">04:14</span>
+        </div>
+
+        <div class="track-row">
+          <span class="col-num">02</span>
+          <div class="col-main">
+            <span class="track-name">Submerged Fjord Meditation</span>
+            <span class="artist-name">Loke Bjørnstad</span>
+          </div>
+          <span class="col-album">Mist & Water</span>
+          <span class="col-genre">Nordic Ambient</span>
+          <span class="col-time">05:12</span>
+        </div>
+
+        <div class="track-row">
+          <span class="col-num">03</span>
+          <div class="col-main">
+            <span class="track-name">Analog Modular Wire</span>
+            <span class="artist-name">Elena Vane</span>
+          </div>
+          <span class="col-album">Patchbay Monologues</span>
+          <span class="col-genre">Modular Techno</span>
+          <span class="col-time">03:38</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Lead Capture -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <span class="section-kicker">Private Pressing Dispatches</span>
+      <h2 class="section-title">Reserve Access to Limited Vinyl & Master Tapes</h2>
+      <p class="section-desc">Subscribers receive notification 48 hours before limited 180g lacquer cuts go live.</p>
+      
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Sonaris Pressing Alerts!');">
+        <input type="email" placeholder="Enter your email address" required class="input-email" />
+        <button type="submit" class="btn-primary">Join Dispatch ↗</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">SONARIS</a>
+        <p>An independent acoustic archive and streaming collective celebrating pure uncompressed sound and master vinyl.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#featured">Featured Sessions</a></li>
+          <li><a href="#releases">Master Releases</a></li>
+          <li><a href="#charts">Top Rotation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Editions</h4>
+        <ul>
+          <li><a href="#">180g Virgin Vinyl</a></li>
+          <li><a href="#">Half-Speed Masters</a></li>
+          <li><a href="#">Direct Tape Stems</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sonaris Audio Collective. All audio recordings copyrighted.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
